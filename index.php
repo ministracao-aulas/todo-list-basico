@@ -119,11 +119,11 @@
                 todo_title.innerText = initial_data.title;
 
             var todo_toggle = document.createElement('input');
-                    todo_toggle.setAttribute('type', "checkbox");
-                    todo_toggle.setAttribute('data-item-target', rand_id);
-                    todo_toggle.setAttribute('todo-toggle', "");
-                    todo_toggle.id = `ckbx_${rand_id}`
-                    todo_toggle.checked = initial_data.done;
+                todo_toggle.setAttribute('type', "checkbox");
+                todo_toggle.setAttribute('data-item-target', rand_id);
+                todo_toggle.setAttribute('todo-toggle', "");
+                todo_toggle.id = `ckbx_${rand_id}`
+                todo_toggle.checked = initial_data.done;
 
             var todo_toggle_label = document.createElement('label');
                 todo_toggle_label.setAttribute('data-item-target', rand_id);
@@ -178,7 +178,6 @@
         {
             if(!element || !(element instanceof HTMLElement)) return;
 
-            // document.querySelector('input[data-item-target][todo-title]').addEventListener('keydown', function(e) {
             element.addEventListener('keydown', function(e) {
                 if (e.keyCode == 27)
                 {
