@@ -2,6 +2,8 @@
 
 TODO list básico
 
+[Demo](./files/todo-list-v1.0-demo.webm)
+
 > Por hora síncrono (envio de formulário), futuramente terá também uma versão AJAX e localStorage
 
 ----
