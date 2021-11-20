@@ -101,6 +101,9 @@
                 todo_li.prepend(todo_title);
                 todo_li.prepend(todo_toggle);
 
+                initial_data.done  ? todo_li.classList.add('done')
+                                    : todo_li.classList.remove('done');
+
             addListenerToRemoveTodo(remove_todo_item);
             addListenerToTodoDataToogle(todo_toggle);
             addListenerToTodoDataTitle(todo_title_input);
