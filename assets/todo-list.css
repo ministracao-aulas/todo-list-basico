@@ -1,0 +1,35 @@
+
+* { margin: 0; padding: 0; }
+[todo-item]{ color: red; width: 50%; }
+
+button {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul[todo-item-container] > li[data-item-target] > button[todo-remove] { background: #db0e0ec2; color: white; border-radius: 0; margin-right: 22px; padding: 15px;}
+ul[todo-item-container] > li[data-item-target] > button[todo-remove]:hover { background: #741d07;}
+/* ul[todo-item-container] > li[data-item-target]{ display: flex; flex-direction: row;} */
+ul[todo-item-container] > li[data-item-target].done, li[data-item-target].done {  background: green !important; }
+
+.d-flex { display: flex; }
+.d-flex.flex-dir-row { flex-direction: row;}
+.d-flex.flex-wrap { flex-wrap: wrap; }
+.d-flex.flex-justify-start { justify-content: flex-start; }
+.d-flex.flex-justify-end { justify-content: flex-end; }
+.d-flex.flex-align-center { align-items: center; }
+
+.flex-container-left{ display: flex; flex-direction: row; justify-content: flex-start; align-items: center; flex-wrap: wrap; }
+
+ul[todo-item-container] { padding: 3px 5px; margin: 3px 0; }
+ul[todo-item-container] > li { margin: 7px 0px; background: antiquewhite}
+
+.flex-container-left input[type=radio], .flex-container-left input[type=checkbox]{    display:none; /* Esconde os inputs */}.flex-container-left label {    cursor: pointer;}.flex-container-left input[type="radio"] + label:before, .flex-container-left input[type="checkbox"] + label:before {    border: 1px solid #5D5C5C;    content: "\00a0";    display: inline-block;    font: 16px/1em sans-serif;    height: 16px;    margin: 0 .25em 0 0;    padding:0;    vertical-align: top;    width: 16px;    border-radius:4px;}.flex-container-left input[type="radio"]:checked + label:before, .flex-container-left input[type="checkbox"]:checked + label:before {    background: #A0A0A0;    color: #FFF;    content: "\2713";    text-align: center;}.flex-container-left input[type="radio"]:checked + label:after, .flex-container-left input[type="checkbox"]:checked + label:after {    font-weight: bold;}
+
+.flex-container-left input[type=checkbox] + label:before { padding: 0.2rem; margin-right: 0.3rem; }
+.flex-container-left input[type=text][todo-title], .flex-container-left span[todo-title-text] {margin: 0px 1rem; padding: 12px 0px;}
+
+.checklist-container {margin: 5rem; box-shadow: #afa496 1px 1px 8px; border-radius: 5px; padding: 8px;}

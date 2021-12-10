@@ -1,1 +1,4 @@
 vendor
+*ignore-it*
+_local-only
+db.json
